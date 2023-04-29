@@ -12,6 +12,7 @@ FILTERS += --citeproc
 PDF_ENGINE += --pdf-engine=lualatex
 PDF_OPTIONS += --number-sections
 
+
 REVEALJS_THEME = beige
 
 %.pdf: %.md
@@ -23,6 +24,6 @@ REVEALJS_THEME = beige
 all: $(FILES)
 
 clean:
-	-@rm $(FILES) *~
+	-rm $(FILES) *~
 
 cleanall: clean
